@@ -1,3 +1,5 @@
+@charset "utf-8";
+@import "node_modules/bulma/bulma.sass";
 
 // Scaffolding
 // -------------------------
@@ -8,7 +10,6 @@ html {
 }
 
 body {
-  padding-top: 60px;
   margin-bottom: 75px;
 }
 

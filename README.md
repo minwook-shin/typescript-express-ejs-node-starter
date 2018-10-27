@@ -1,6 +1,8 @@
-# TypeScript + Express + ejs + Node.js Starter
+# TypeScript + Express + ejs + Node.js Starter with bulma.io
 
-TypeScript Express ejs template starter using Microsoft's TypeScript-Node-Starter
+TypeScript Express ejs template starter using Microsoft's TypeScript-Node-Starter.
+
+include bulma.io (open source CSS framework).
 
 ![image](https://user-images.githubusercontent.com/820883/36764267-abbdb7f8-1be0-11e8-9678-2a9ea448d7f8.png)
 
