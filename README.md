@@ -1,26 +1,29 @@
-# TypeScript + Express + ejs + Node.js Starter with bulma.io
+# Modern TypeScript + Express + EJS + HTMX Starter (2026 Edition)
 
-TypeScript Express ejs template starter using Microsoft's TypeScript-Node-Starter.
+A lightweight, fast, and type-safe server-side rendering (SSR) starter kit modernized for 2026.
 
-include bulma.io (open source CSS framework).
+## Features
 
-![image](https://user-images.githubusercontent.com/820883/36764267-abbdb7f8-1be0-11e8-9678-2a9ea448d7f8.png)
+- **Runtime**: Node.js (LTS) + pnpm
+- **Language**: TypeScript 5.x (Strict Mode, ESM)
+- **Framework**: Express.js + EJS
+- **Interactivity**: HTMX (No complex build steps for frontend)
+- **Validation**: Zod (Runtime schema validation)
+- **Tooling**: Vitest, ESLint (Flat Config), Prettier, tsx
 
 # Pre-reqs
-To build and run this app locally you will need a few things:
-- Install [Node.js](https://nodejs.org/en/)
-- Install IDE or editor
+- [Node.js](https://nodejs.org/en/) (LTS)
+- [pnpm](https://pnpm.io/) (`npm install -g pnpm`)
 
 # Getting started
-- Download the repository
 
 - Install dependencies
 ```
-npm install
+pnpm install
 ```
 - Build and run the project
 ```
-npm run build
+pnpm build
 npm start
 ```
 
@@ -48,17 +51,12 @@ The full folder structure of this app is explained below:
 | **dist**                 | Contains the distributable (or output) from your TypeScript build. This is the code you ship  |
 | **node_modules**         | Contains all your npm dependencies                                                            |
 | **src**                  | Contains your source code that will be compiled to the dist dir                               |
-| **src/controllers**      | Controllers define functions that respond to various http requests                            |
 | **src/public**           | Static assets that will be used client side                                                   |
 | **src**/server.ts        | Entry point to your express app                                                               |
 | **test**                 | Contains your tests. Seperate from source because there is a different build process.         |
-| **views**                | Views define how your app renders on the client. In this case we're using pug                 |
-| .travis.yml              | Used to configure Travis CI build                                                             |
-| .copyStaticAssets.ts     | Build script that copies images, fonts, and JS libs to the dist folder                        |
-| jest.config.js           | Used to configure Jest                                                                        |
+| **views**                | Views define how your app renders on the client. In this case we're using EJS                 |
 | package.json             | File that contains npm dependencies as well as [build scripts](#what-if-a-library-isnt-on-definitelytyped)                          |
 | tsconfig.json            | Config settings for compiling server code written in TypeScript                               |
-| tslint.json              | Config settings for TSLint code style checking                                                |
 
 ### Running the build
 All the different build steps are orchestrated via [npm scripts](https://docs.npmjs.com/misc/scripts).
@@ -76,19 +74,6 @@ Below is a list of all the scripts this template has available:
 | `build`                   | Full build. Runs ALL build tasks (`build-sass`, `build-ts`, `tslint`, `copy-static-assets`)       |
 | `serve`                   | Runs node on `dist/server.js` which is the apps entry point                                       |
 | `test`                    | Runs tests using Jest test runner                                                                 |
-| `tslint`                  | Runs TSLint on project files                                                                       |
-
-
-
-### Running tests
-Simply run `npm run test`.
-Note this will also generate a coverage report.
-
-### Running TSLint
-```
-npm run build   // runs full build including TSLint
-npm run tslint  // runs only TSLint
-```
 
 # Hackathon Starter Project
 A majority of this quick start's content was inspired or adapted from Sahat's excellent [Hackathon Starter project](https://github.com/sahat/hackathon-starter).
