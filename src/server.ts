@@ -62,6 +62,10 @@ app.get('/', validate(HomeQuerySchema), (req: Request, res: Response) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-});
+if (process.argv[1] === __filename) {
+  app.listen(PORT, () => {
+    console.log(`🚀 Server running on http://localhost:${PORT}`);
+  });
+}
+
+export default app;
