@@ -57,7 +57,7 @@ jobs:
           "
           # Copy public assets
           if [ -d "src/public" ]; then
-            cp -r src/public/* _site/
+            cp -r src/public/. _site/
           fi
 
       - name: Setup Pages
