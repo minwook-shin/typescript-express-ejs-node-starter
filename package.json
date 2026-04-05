@@ -33,7 +33,7 @@
     "@types/morgan": "^1.9.9",
     "@types/node": "^20.12.12",
     "@types/supertest": "^6.0.2",
-    "eslint": "^9.3.0",
+    "eslint": "^10.2.0",
     "prettier": "^3.2.5",
     "supertest": "^7.0.0",
     "tsx": "^4.10.5",
