@@ -35,7 +35,7 @@ const validate = (schema: z.ZodSchema) => (req: Request, res: Response, next: Ne
     next();
   } catch (err) {
     if (err instanceof z.ZodError) {
-      return res.status(400).json({ errors: err.errors });
+      return res.status(400).json({ errors: err.issues });
     }
     next(err);
   }
